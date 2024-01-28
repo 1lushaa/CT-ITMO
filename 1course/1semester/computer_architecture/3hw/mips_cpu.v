@@ -1,3 +1,5 @@
+//ONLY FIRST PART OF THE TASK!!!
+
 `include "util.v"
 
 module mips_cpu(clk, pc, pc_new, instruction_memory_a, instruction_memory_rd, data_memory_a, data_memory_rd, data_memory_we, data_memory_wd,
