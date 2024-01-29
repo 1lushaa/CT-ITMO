@@ -262,7 +262,7 @@
 2.  Класс `Paragraph` может содержать произвольное число других элементов разметки и текстовых элементов.
 3.  Класс `Text` – текстовый элемент.
 4.  Классы разметки `Emphasis`, `Strong`, `Strikeout` – выделение, сильное выделение и зачеркивание. Элементы разметки могут содержать произвольное число других элементов разметки и текстовых элементов.
-5.  Все классы должны реализовывать метод `toMarkdown([StringBuilder](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuilder.html))`, который должен генерировать [Markdown](https://ru.wikipedia.org/wiki/Markdown)\-разметку по следующим правилам:
+5.  Все классы должны реализовывать метод `toMarkdown(String Builder)`, который должен генерировать [Markdown](https://ru.wikipedia.org/wiki/Markdown)\-разметку по следующим правилам:
     *   текстовые элементы выводятся как есть;
     *   выделенный текст окружается символами '`*`';
     *   сильно выделенный текст окружается символами '`__`';
@@ -500,95 +500,7 @@
     *   [PCMS](https://pcms.itmo.ru/): Java. North-Western Russia Regional Contest - 2019
     *   [Условия задач](https://nerc.itmo.ru/archive/2019/northern/nwrrc-2019-statements.pdf)
     *   [Разбор задач](https://nerc.itmo.ru/archive/2019/northern/nwrrc-2019-tutorials.pdf)
-3.  Задачи для решения
-    
-    Задача
-    
-    Тема
-    
-    Сложность
-    
-    A.
-    
-    Accurate Movement
-    
-    Формула
-    
-    5
-    
-    B.
-    
-    Bad Treap
-    
-    Циклы
-    
-    10
-    
-    C.
-    
-    Cross-Stitch
-    
-    Графы
-    
-    40
-    
-    D.
-    
-    Double Palindrome
-    
-    Массивы
-    
-    40
-    
-    E.
-    
-    Equidistant
-    
-    Деревья
-    
-    30
-    
-    H.
-    
-    High Load Database
-    
-    Массивы
-    
-    20
-    
-    I.
-    
-    Ideal Pyramid
-    
-    Циклы
-    
-    15
-    
-    J.
-    
-    Just the Last Digit
-    
-    Матрицы
-    
-    20
-    
-    K.
-    
-    King’s Children
-    
-    Массивы
-    
-    40
-    
-    M.
-    
-    Managing Difficulties
-    
-    Коллекции
-    
-    10
-    
-4.  Рекомендуемое время выполнения задания: 3 часа
+3.  Рекомендуемое время выполнения задания: 3 часа
 
 #### Домашнее задание 11. Игра m,n,k
 
