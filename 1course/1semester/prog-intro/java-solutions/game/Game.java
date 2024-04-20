@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Game {
 
     public void play() {
-        // :NOTE: почему игра запускает олимпийскую систему, а не наоброт????
         Scanner in = new Scanner(System.in);
         while (true) {
             try {
