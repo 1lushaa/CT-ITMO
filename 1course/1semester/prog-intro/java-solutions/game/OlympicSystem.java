@@ -63,7 +63,6 @@ public class OlympicSystem {
     public void playersMoves(MNKBoard board, Player player1, Player player2) {
         while (true) {
             try {
-                // :NOTE: не проигрыша, если игрок сделал плохой ход
                 if (resultCheck(board.makeMove(player1.move(Cell.X, board.getPosition())), player1, board, player2)) {
                     players.remove(player2);
                     break;
@@ -73,13 +72,12 @@ public class OlympicSystem {
                         players.remove(player1);
                         break;
                     }
-                    // :NOTE: никогда так не пишите!!!
-                } catch (Exception | Error e) {
+                } catch (IllegalStateException e) {
                     System.out.println("Player " + player1.getName() + " is winner of this match!");
                     players.remove(player2);
                     break;
                 }
-            } catch (Exception | Error e) {
+            } catch (IllegalStateException e) {
                 System.out.println("Player " + player2.getName() + " is winner of this match!");
                 players.remove(player1);
                 break;
